@@ -88,17 +88,51 @@
   .navigation-list {
     display: flex;
     gap: 50px;
-    margin: 32px 0px 32px 93px;
+    margin: 32px 0px 32px 40px;
   }
   
+.envelope {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    padding-left: 10px:
+    stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+ }
+
+.envelope:hover {
+    color: #2196f3;
+ }
+ 
+.smartphone {
+    display: inline-block;
+    width: 10px;
+  height: 16px;
+  margin-right: 10px;
+   padding-left: 10px:
+    stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.smartphone:hover {
+    color: #2196f3;
+ }
+
+.icon-smartphonesmartphone {
+    width: 0.625em;
+  }
+
   .right-navigation-list {
-    display: flex;
+    display:flex;
     gap: 40px;
     align-items: center;
     margin: 32px 350px 32px 0px;
   }
   
-  .link {
+  .link, .envelope  {
     list-style: none;
     text-decoration: none;
     color: #212121;
@@ -115,8 +149,8 @@
     top: 80px;
      }
   
-  .first-section {
-   background: #2f303a;
+  .back-title {
+
   }
   
   .title {
@@ -221,6 +255,11 @@
     letter-spacing: 0.03em;
     color: #212121;
   }
+
+  .team-member-name {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
   
   .portfolio-button {
     list-style: none;
@@ -253,9 +292,9 @@
   
   .link-portfolio {
     width: 120px;
-  height: 38px;
-  left: 614px;
-  top: 174px;
+    height: 38px;
+    left: 614px;
+    top: 174px;
   }
   
   .link-portfolio:hover {
@@ -316,12 +355,27 @@
     justify-content: center;
   }
   
+  .svg-strong-points {
+  box-sizing: border-box;
+  background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  top: 94px;
+  margin-bottom: 30px;
+  radius: 4px;
+  }
+
+  .svg-icon {
+    top: 799px;
+    background-color: #212121;
+  }
+
   .company-strong-points {
     list-style: none;
     display: flex;
     align-items: center;
     width: 1170px;
-      height: 101px;
+    height: 101px;
     margin-top: 94px;
     gap: 30px;
   }
@@ -364,7 +418,17 @@
   .our-team {
       height: 600px; ;
   background: #F5F4FA;
+  padding-bottom: 94px;
   }
+
+.team-picture {
+    background: #FFFFFF;
+    width: 270px;
+    height: 428px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12)  
+}
   
   .title-section-team {
     display: block;
