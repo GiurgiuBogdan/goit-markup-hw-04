@@ -573,19 +573,19 @@
    fill: solid#FFFFFF;
 }
 
-  .title-section-team, .title-section-customers {
+.title-section-team, .title-section-customers {
     display: flex;
     justify-content: center;
     padding-top: 94px;
     padding-bottom: 50px;
   }
   
-  .title-section-team {
+.title-section-team {
     width: 198px
     height: 42px;
   }
   
-  .title-section-out-team {
+.title-section-out-team {
     list-style: none;
     list-style: none;
     display: flex;
@@ -595,47 +595,47 @@
     padding-left: 0px;
   }
   
-  .text-section-team {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    gap: 250px;
-    margin-bottom: 16px;
+.text-section-team {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 250px;
+  margin-bottom: 16px;
   }
 
-  .regular-customers {
-    height: 372px;
-    display: flex;
-    justify-content: center;
+.regular-customers {
+  height: 372px;
+  display: flex;
+  justify-content: center;
   }
 
-  .customer-card {
-    box-sizing: border-box;
-    border: 1px solid#AFB1B8;
-    fill: #afb1b8;
+.customer-card {
+  box-sizing: border-box;
+  border: 1px solid#AFB1B8;
+  fill: #afb1b8;
   }
   
-  .customer-card a svg:hover {
-    fill: #2196f3;
-    box-sizing: border-box;
-    border: 1px solid#2196f3;
+.customer-card a svg:hover {
+  fill: #2196f3;
+  box-sizing: border-box;
+  border: 1px solid#2196f3;
   }
 
-  .product-list {
-    list-style: none;
+.product-list {
+  list-style: none;
   }
   
-  .text-section-portfolio {
-    width: 322px;
-    height: 30px;
-    top: 616px;
+.text-section-portfolio {
+  width: 322px;
+  height: 30px;
+  top: 616px;
   }
   
-  .text-section-portfolio {
-    padding: 0px 24px 20px 24px;
+.text-section-portfolio {
+  padding: 0px 24px 20px 24px;
   }
   
-  .text-section-adress {
+.text-section-adress {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -644,7 +644,7 @@
     letter-spacing: 0.03em;
     color: #ffffff;
   }
-  .text-section-contact {
+.text-section-contact {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -654,7 +654,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   
-  .footer {
+.footer {
     display: flex;
     justify-content: center;
     background: #2f303a;
