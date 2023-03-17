@@ -17,6 +17,7 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header-container">
       <a class="company-logo" href="webstudio">Web</a>
       <nav class="header-navigation">
         <ul class="navigation-list">
@@ -28,14 +29,24 @@
         </ul>
       </nav>
       <ul class="right-navigation-list">
-        <li>
-          <a class="link" href="info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li><a class="link" href="+1 212-772-4150">+1 212-772-4150</a></li>
+        <li class="contact-list-item">
+            <a class="link-mail" href="info@devstudio.com">
+                <svg class="icon-contact" widht="10px" height="16px">
+                    <use class="envelope" href="/images/icons.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
+          </li>
+          <li class="contact-list-item">
+            <a class="link-phone" href="+1 212-772-4150">
+                <svg class="icon-contact" widht="10px" height="16px">
+                    <use class="smartphone" href="/images/icons.svg#icon-smartphonesmartphone"></use>
+                </svg>+1 212-772-4150</a>
+          </li>
       </ul>
+    </div>
     </header>
     <main>
-      <section>
+      <section class="portoflio-section">
+        <div class="portfolio-button-container">
         <ul class="portfolio-button">
           <li>
             <button class="link-portfolio">All</button>
@@ -45,8 +56,10 @@
             <button class="link-portfolio">Marketing</button>
           </li>
         </ul>
+        <div>
       </section>
-      <section>
+      <section class="product-list-section">
+        <div class="product-list-container">
         <ul class="product-list">
           <li class="product-box">
             <img
@@ -157,15 +170,55 @@
             </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="company-logo-footer" href="webstudio">Web</a>
-      <ul class="footer-contact-info">
-        <li><p class="text-section-adress">695 Park Ave, NY 10065, USA</p></li>
-        <li><p class="text-section-contact">info@devstudio.com</p></li>
-        <li><p class="text-section-contact">+1 212-772-4150</p></li>
-      </ul>
+      <div class="footer-conteiner">
+      <div class="footer-left">
+        <a class="company-logo-footer" href="webstudio">Web</a>
+        <ul class="footer-contact-info">
+          <li>
+            <p class="text-section-adress">695 Park Ave, NY 10065, USA</p>
+          </li>
+          <li><p class="text-section-contact">info@devstudio.com</p></li>
+          <li><p class="text-section-contact">+1 212-772-4150</p></li>
+        </ul>
+      </div>
+      <div class="footer-mid">
+        <h3 class="title-footer-social">FIND US ON</h3>
+        <ul class="footer-social-network">
+          <li class="footer-social-icon">
+            <a class="social-link-icon-2" href="#">
+              <svg widht="20" height="20">
+                <use href="/images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-icon">
+            <a class="social-link-icon-2" href="#">
+              <svg widht="20" height="20">
+                <use href="/images/icons.svg#icon-twitter-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-icon">
+            <a class="social-link-icon-2" href="#">
+              <svg widht="20" height="20">
+                <use href="/images/icons.svg#icon-facebook-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-icon-2">
+            <a class="social-link-icon-2" href="#">
+              <svg widht="20" height="20">
+                <use href="/images/icons.svg#icon-linkedin-2"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
     </footer>
   </body>
 </html>

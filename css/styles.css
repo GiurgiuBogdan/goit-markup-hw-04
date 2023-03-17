@@ -1,11 +1,16 @@
 .page-header {
     display: flex;
-    flex-grow: 1;
-    align-items: center;
-    height: 80px;
-    background: #ffffff;
+    justify-content: center;
     border: 1px solid #ECECEC;
     }
+  
+  .page-header-container {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 80px;
+    background: #ffffff;
+  }
   
   .company-logo {
     font-family: "Raleway";
@@ -19,10 +24,6 @@
     text-decoration: none;
     margin-top: 24px;
     margin-bottom: 25px;
-  }
-  
-  .company-logo {
-  margin-left: 400px;
   }
   
   .company-logo::after {
@@ -84,80 +85,89 @@
     list-style: none;
     text-decoration: none;
   }
-  
+ 
+  .icon-contact {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  justify-content: center;
+  margin-right: 10px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  fill: #757575;
+  cursor: pointer;
+  }
+
+  .icon-contact:hover {
+    fill: #2196f3;
+    
+  }
+
+  .envelope {
+    width: 1.23046875em;
+  }
+
+  .smartphone {
+    width: 0.625em;  
+}
+
   .navigation-list {
     display: flex;
     gap: 50px;
-    margin: 32px 0px 32px 40px;
+    margin: 32px 0px 32px 0px;
   }
   
-.envelope {
-    display: inline-block;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    padding-left: 10px:
-    stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
- }
-
-.envelope:hover {
-    color: #2196f3;
- }
- 
-.smartphone {
-    display: inline-block;
-    width: 10px;
-  height: 16px;
-  margin-right: 10px;
-   padding-left: 10px:
-    stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-
-.smartphone:hover {
-    color: #2196f3;
- }
-
-.icon-smartphonesmartphone {
-    width: 0.625em;
-  }
-
   .right-navigation-list {
-    display:flex;
+    display: flex;
     gap: 40px;
     align-items: center;
-    margin: 32px 350px 32px 0px;
+    margin: 32px 0px 32px 0px;
+    padding-inline-start: 0px;
+  }
+
+  .contact-list-item {
+    display: flex;
+    justify-content: center;
   }
   
-  .link, .envelope  {
+  .link, .link-mail, .link-phone {
     list-style: none;
     text-decoration: none;
     color: #212121;
   }
-  
-  .link:hover {
+
+  .link:hover, .link-mail:hover, .link-phone:hover {
     color: #2196f3;
+    fill: #2196f3;
   }
+
+  .first-section {
+    height: 600px;
+    top: 80px;
+    }
   
   .first-section {
     display: flex;
     justify-content: center;
-    height: 600px;
-    top: 80px;
-     }
+    background-image: url("/images/Imgback-title.jpg");
+    background-color: #2F303A66;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
-  .back-title {
-
+  .first-section-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
   }
   
   .title {
     display: flex;
     flex-grow: wrap;
-    align-content: center;
-    margin-top: 200px;
+    align-items: center;
     width: 696px;
     height: 120px;
   }
@@ -178,15 +188,12 @@
   .request-our-service-button {
     box-sizing: border-box;
     padding: 10px 20px;
-    display: flex;
-    align-content: center;
   }
   
   .request-our-service-button {
-    position: absolute;
     width: 200px;
     height: 50px;
-    margin-top: 350px;
+    margin-top: 40px;
     background-color: #2196f3;
     border-style: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -223,17 +230,17 @@
   }
   
   .text-section {
-      display: flex;
-      width: 270px;
-      height: 75px;
-      top: 800px;
-      display: flex;
-      grid-row: auto;
-      justify-content: center;
-      gap: 30px:
+    display: flex;
+    width: 270px;
+    height: 75px;
+    top: 800px;
+    display: flex;
+    grid-row: auto;
+    justify-content: center;
+    gap: 30px:
   }
   
-  .title-section, .title-section-team {
+  .title-section, .title-section-team, .title-section-customers {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -257,8 +264,21 @@
   }
 
   .team-member-name {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .portoflio-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .portfolio-button-container {
+    display: flex;
+    flex-direction: row;
+    flex: grow 1;
+    justify-content: center;
+    width: 1200px;
   }
   
   .portfolio-button {
@@ -268,11 +288,11 @@
   
   .portfolio-button {
     display: flex;
-    flex-grow: 1;
     justify-content: center;
     gap: 8px;
     margin-top: 94px;
     margin-bottom: 50px;
+    padding-left: 0px;
   }
   
   .link-portfolio {
@@ -293,8 +313,6 @@
   .link-portfolio {
     width: 120px;
     height: 38px;
-    left: 614px;
-    top: 174px;
   }
   
   .link-portfolio:hover {
@@ -313,16 +331,32 @@
     border-style: none;
   }
   
+  .link-portfolio {
+    cursor: pointer;
+  }
+  
+  .product-list-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+  }
+  
+  .product-list-container {
+    display: flex;
+    align-content: center;
+    width: 1200px;
+  }
+  
   .product-list {
     list-style: none;
-    width: 1200px;
     display: flex;
     align-self: stretch;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-left: 0px;
+    width: 1200px;
     justify-content: space-around;
     gap: 30px;
-    margin:auto;
   }
   
   .product {
@@ -343,8 +377,8 @@
   .product-box {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-  width: 370px;
-  height: 404px;
+    width: 370px;
+    height: 404px;
   }
   
   .product-box-element {
@@ -353,48 +387,66 @@
   .strong-points{
     display: flex ;   
     justify-content: center;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   
-  .svg-strong-points {
-  box-sizing: border-box;
-  background-color: #F5F4FA;
-  width: 270px;
-  height: 120px;
-  top: 94px;
-  margin-bottom: 30px;
-  radius: 4px;
+  .strong-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
   }
 
-  .svg-icon {
-    top: 799px;
-    background-color: #212121;
+  .icon-strong-point {
   }
-
+ 
+  .company-strong-points-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+  }
+  
   .company-strong-points {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 1170px;
     height: 101px;
-    margin-top: 94px;
     gap: 30px;
+    padding-inline-start: 0px;
+  }
+
+  .stong-point-box {
+    margin-top: 94px;
+    margin-bottom: 30px;
+    barder-radius: 4px;
   }
   
   .sub-title-section {
-      width: 270px;
-      height: 16px;
-      bottom: 10px;
-      align-items: center;
+    width: 270px;
+    height: 16px;
+    bottom: 10px;
+    align-items: center;
   }
   
   .what-we-do {
-    display: block;
-    align-content: center;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     margin-top: 94px;
-      width: 1170px;
-      height: 386px;
-      margin-bottom: 94px;
+    height: 386px;
+    margin-bottom: 94px;
+  }
+  
+  .what-we-do-container, .container {
+    width: 1200px;
   }
   
   .title-section {
@@ -416,24 +468,114 @@
   }
   
   .our-team {
-      height: 600px; ;
-  background: #F5F4FA;
-  padding-bottom: 94px;
+    display: flex;
+    justify-content: center;
+    height: 600px; ;
+    background: #F5F4FA;
+    padding-bottom: 94px;
+  }
+  
+  .out-team-container {
+    width: 1200px;
+  }
+  
+  .team-picture { 
+   width: 270px;
+   height: 428px;
+   background-color: #FFFFFF ;
+   display: flexbox;
+   border-radius: 0px 1px 3px 1px;
+   box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.14);
   }
 
-.team-picture {
-    background: #FFFFFF;
-    width: 270px;
-    height: 428px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12)  
-}
-  
-  .title-section-team {
-    display: block;
-    flex-grow: 1;
+  .social-network-team, .social-network-customer {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding-inline-start: 0px;
+    list-style: none;
+    gap: 10px;
+  }
+
+  .social-network-customer {
+    gap: 30px;
+  }
+
+  .customer-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+  }
+
+  .social-link-customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+  }
+
+  .social-link-customer:hover {
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+    fill: solid#2196f3;
+  }
+
+  .customer-card a svg:hover {
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+    fill: solid#2196f3;
+  }
+
+.social-link, .social-link-icon-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.social-link-icon-2 {
+  background-color: #FFFFFF1A;
+  border-radius: 50%;
+}
+
+.social-link-icon-2:hover {
+  background-color: #2196f3;
+}
+
+.social-link a svg {
+  fill: #afb1b8;
+}
+
+.social-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.social:hover {
+  fill: #FFFFFF;
+}
+
+.social-link a:hover {
+   background-color: #2196f3; 
+   fill: solid#FFFFFF;
+}
+
+  .title-section-team, .title-section-customers {
+    display: flex;
+    justify-content: center;
     padding-top: 94px;
     padding-bottom: 50px;
   }
@@ -450,6 +592,7 @@
     flex-grow: 1;
     justify-content: center;
     gap: 30px;
+    padding-left: 0px;
   }
   
   .text-section-team {
@@ -457,20 +600,35 @@
     flex-grow: 1;
     justify-content: center;
     gap: 250px;
+    margin-bottom: 16px;
+  }
+
+  .regular-customers {
+    height: 372px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .customer-card {
+    box-sizing: border-box;
+    border: 1px solid#AFB1B8;
+    fill: #afb1b8;
   }
   
-  .footer-contact-info {
-    list-style: none;
+  .customer-card a svg:hover {
+    fill: #2196f3;
+    box-sizing: border-box;
+    border: 1px solid#2196f3;
   }
+
   .product-list {
     list-style: none;
   }
   
   .text-section-portfolio {
     width: 322px;
-  height: 30px;
-  left: 1039px;
-  top: 616px;
+    height: 30px;
+    top: 616px;
   }
   
   .text-section-portfolio {
@@ -497,28 +655,83 @@
   }
   
   .footer {
-  height: 251px;
+    display: flex;
+    justify-content: center;
     background: #2f303a;
   }
   
-  .company-logo-footer {
-      display: flex;
-    flex-grow: 1;
+  .footer-conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 1200px;
+    height: 251px;
     padding-top: 60px;
-    margin-left: 400px;
+  }
+  
+  .company-logo-footer {
+    width: 145px;
+    height: 31px;
+  }
+  
+  .footer-contact-info {
+    list-style: none;
+    display: block;
+    align-items: center;
+    padding-inline-start: 0px;
   }
   
   .text-section-adress {
-      display: flex;
-      flex-grow: 1;
-      margin: 28px 1100px 12px 360px ;
+    display: block;
+    margin: 28px 0px 12px 0px ;
   }
   
   .text-section-contact {
-      display: flex;
-      flex-grow: 1;
-      align-items: center;
-      margin: 12px 1178px 12px 360px ;
+    display: flex;
+    margin: 12px 0px 12px 0px ;
+  }
+
+  .footer-social-network {
+    display: flex;
+    padding-inline-start: 0px;
+    list-style: none;
+    gap: 10px;
+  }
+
+  .title-footer-social {
+    font-family: "Roboto";
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    lein-height: 100%;
+    aligne: left;
+    letter-spacing: 3%;
+    color: #ffffff;
+ }
+
+  .title-footer-social {
+   display: flex;
+   align-items: left;
+   margin-bottom: 20px;
+  }
+
+  .footer-media {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 94px;
   }
   
   * {
