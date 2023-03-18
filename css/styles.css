@@ -150,7 +150,6 @@
   .first-section {
     display: flex;
     justify-content: center;
-    background-image: url("./image/Imgback-title.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(to top left, #2F303A66, #C4C4C4);
