@@ -150,7 +150,7 @@
   .first-section {
     display: flex;
     justify-content: center;
-    background-image: url("images/Imgback-title.jpg");
+    background-image: url("https://github.com/GiurgiuBogdan/goit-markup-hw-04/blob/5186a0cbbd22edde0a8911ff87f7b98ea66054ff/images/Imgback-title.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
