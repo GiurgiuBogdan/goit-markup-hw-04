@@ -150,11 +150,16 @@
   .first-section {
     display: flex;
     justify-content: center;
-    background-image: url ("./images/Imgback-title.jpg");
+    background-image: url ("images/Imgback-title.jpg");
     background-color: #2F303A66;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.first-section {
+    background-color: linear-gradient( top left,
+      #2F303A66 40%,
+      #C4C4C4 60%);}
   
   .first-section-container{
     display: flex; 
