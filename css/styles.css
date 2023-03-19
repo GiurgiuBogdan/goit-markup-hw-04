@@ -150,9 +150,9 @@
   .first-section {
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/Imgback-title.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to top left, #2F303A66, #C4C4C4);
   }
   
   .first-section-container{
